@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quizzes &amp; Games</title>
+<meta name="description" content="All daily quizzes and games in one place.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f6f7fb;
+    color: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 16px 64px;
+  }
+  header { text-align: center; margin-bottom: 32px; }
+  h1 { font-size: 2rem; font-weight: 700; }
+  .subtitle { color: #5c5c7a; margin-top: 8px; font-size: 1rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    width: 100%;
+    max-width: 520px;
+  }
+  a.card {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e4e6f0;
+    border-radius: 14px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 3px rgba(20, 20, 60, 0.05);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  a.card:hover, a.card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(20, 20, 60, 0.10);
+    outline: none;
+  }
+  .card .name { font-size: 1.1rem; font-weight: 650; }
+  .card .desc { color: #5c5c7a; font-size: 0.92rem; margin-top: 4px; }
+  .card .url { color: #9a9ab5; font-size: 0.78rem; margin-top: 8px; word-break: break-all; }
+  .section {
+    width: 100%;
+    max-width: 520px;
+    margin: 26px 0 10px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #9a9ab5;
+  }
+  footer { margin-top: 40px; color: #9a9ab5; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Quizzes &amp; Games</h1>
+    <p class="subtitle">All my daily quizzes in one place</p>
+  </header>
+
+  <div class="section">Daily quizzes</div>
+  <div class="grid">
+    <a class="card" href="https://kavishavi.github.io/quiz/">
+      <div class="name">Daily Quiz</div>
+      <div class="desc">A new set of questions every day</div>
+      <div class="url">kavishavi.github.io/quiz/</div>
+    </a>
+    <a class="card" href="https://kavishavi.github.io/kavita-quiz/">
+      <div class="name">दैनिक कविता क्विज़ &middot; Daily Poetry Quiz</div>
+      <div class="desc">Hindi poetry - six new questions every day</div>
+      <div class="url">kavishavi.github.io/kavita-quiz/</div>
+    </a>
+    <a class="card" href="https://kavishavi.github.io/ai-quiz/">
+      <div class="name">Daily AI Quiz</div>
+      <div class="desc">Six new AI questions every day</div>
+      <div class="url">kavishavi.github.io/ai-quiz/</div>
+    </a>
+  </div>
+
+  <div class="section">Word games</div>
+  <div class="grid">
+    <a class="card" href="https://kavishavi.github.io/hinglishwordle/">
+      <div class="name">Hinglish Wordle</div>
+      <div class="desc">Guess the Hinglish word</div>
+      <div class="url">kavishavi.github.io/hinglishwordle/</div>
+    </a>
+    <a class="card" href="https://tomanishp.github.io/hindimatrix/?q=3">
+      <div class="name">Hindi Words Formation &middot; हिन्दी शब्द रचना</div>
+      <div class="desc">Swap letters to find four hidden Hindi words - puzzle 3</div>
+      <div class="url">tomanishp.github.io/hindimatrix/?q=3</div>
+    </a>
+    <a class="card" href="https://tomanishp.github.io/hindimatrix/?q=4">
+      <div class="name">Hindi Words Formation &middot; हिन्दी शब्द रचना</div>
+      <div class="desc">Swap letters to find four hidden Hindi words - puzzle 4</div>
+      <div class="url">tomanishp.github.io/hindimatrix/?q=4</div>
+    </a>
+  </div>
+
+  <footer>New quizzes are added here as they go live.</footer>
+</body>
+</html>
